@@ -72,4 +72,4 @@ terraform {
 }
 EOF
 cat backend.tf
-terrafor-0.13
+terraform-0.13
