@@ -1,4 +1,4 @@
-s3_bucket = "balloray-bucket"
+s3_bucket = "balloray-jenkins-bucket"
 s3_folder_project = "terraform_vpc"
 s3_folder_region = "us-east-1"
 s3_folder_type = "class"
