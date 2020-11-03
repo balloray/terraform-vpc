@@ -93,7 +93,7 @@
                     stage("Terraform Plan"){
                       sh """
                         terraform plan -var-file ${environment}.tfvars
-                        echo "Nothinh to do in ${environment}.Choose either apply or destroy"
+                        echo "Nothinh to do in ${aws_region_var}.Choose either apply or destroy"
                         """
                     }
                   }            
