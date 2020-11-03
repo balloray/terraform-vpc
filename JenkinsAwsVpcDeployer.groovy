@@ -91,9 +91,9 @@
                   }
                   else {
                     stage("Terraform Plan"){
-                        sh """
-                          echo "Nothinh to do.Choose either apply or destroy"
-                          terraform plan -var-file ${environment}.tfvars
+                      sh """
+                        terraform plan -var-file ${environment}.tfvars
+                        echo "Nothinh to do.Choose either apply or destroy"
                         """
                     }
                   }            
