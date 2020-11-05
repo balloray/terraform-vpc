@@ -63,7 +63,7 @@
 
         
         container("fuchicorptools") {
-          
+          dir('aws-vpc2') {
             withCredentials([usernamePassword(credentialsId: 'aws-access', passwordVariable: 'AWS_SECRET_ACCESS_KEY', usernameVariable: 'AWS_ACCESS_KEY_ID')]) {
               withEnv(["AWS_REGION=${aws_region_var}"]) {
                   stage("Terrraform Init"){
@@ -100,7 +100,7 @@
                 
               }
             }
-          
+          }
         }
       }
   }
